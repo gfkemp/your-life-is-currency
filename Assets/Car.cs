@@ -28,7 +28,7 @@ public class Car : MonoBehaviour {
     {
         if (Input.GetKey(KeyCode.R))
         {
-            this.transform.position = Vector3.zero;
+            this.transform.position = new Vector3(100, 0, 150);
             this.transform.rotation = Quaternion.identity;
         }
 

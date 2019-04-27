@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1375031167104400}
+  m_IsPrefabAsset: 1
+--- !u!1 &1375031167104400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4722611645640504}
+  - component: {fileID: 114387423539161150}
+  m_Layer: 0
+  m_Name: SpawnController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4722611645640504
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1375031167104400}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114387423539161150
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1375031167104400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5d953cdf48594acca0f5b37afe0785a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  person: {fileID: 1691414701287376, guid: ddd2453dee36a4baa95c67cce761dd82, type: 2}
+  radius: 10
+  total: 10
+  sprites:
+  - {fileID: 21300000, guid: 3c9625dc94ff74d0ea5c9d6b55026999, type: 3}
+  - {fileID: 21300000, guid: 423e4ea713a274c8e90b1281e4c05b91, type: 3}
+  - {fileID: 21300000, guid: 662da4021733947b895ca3dd795d5a1a, type: 3}
+  - {fileID: 21300000, guid: 23751c378e9574a519906ee9c30fb086, type: 3}
+  - {fileID: 21300000, guid: 1815f5983375246efb558a79b5a91463, type: 3}
+  - {fileID: 21300000, guid: a6568caede1934bf28758edccdecaf44, type: 3}
+  - {fileID: 21300000, guid: 608f4774a86d64c75952d59890e44010, type: 3}
+  - {fileID: 21300000, guid: 9d9f6f61a633d4ee49ffaa7656bf73bc, type: 3}
+  - {fileID: 21300000, guid: c8113035c2c5a40258ddf052880cd665, type: 3}
+  - {fileID: 21300000, guid: d29bde482415c4d57b128db6a7417d76, type: 3}

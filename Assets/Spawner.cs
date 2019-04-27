@@ -16,8 +16,9 @@ public class Spawner : MonoBehaviour {
         {
             Vector3 loc = Random.insideUnitSphere * radius;
             loc.y = 0.3f;
-            GameObject p = Instantiate(person, loc, Quaternion.identity);
+            GameObject p = Instantiate(person);
             p.transform.parent = this.transform;
+            p.transform.localPosition = loc;
 
             Person per = p.GetComponent<Person>();
             per.SetSprite(sprites[Random.Range(0, sprites.Length)]);

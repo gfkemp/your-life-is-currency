@@ -6,7 +6,10 @@ using UnityEngine;
 public class CameraHolder : MonoBehaviour {
 
     public Transform focus;
-    public Transform car;
+    public WheelCollider a;
+    public WheelCollider b;
+    public WheelCollider c;
+    public WheelCollider d;
     public GameObject mainCam;
 
     float countDown = 10;
@@ -25,9 +28,9 @@ public class CameraHolder : MonoBehaviour {
         else
         {
             countDown -= 0.1f;
-            mainCam.transform.LookAt(car);
+            mainCam.transform.LookAt(focus);
 
-            if (countDown <= 0)
+            if (countDown <= 0 || Grounded())
             {
                 normalTrack = true;
                 mainCam.transform.localPosition = new Vector3(10, 10, -10);
@@ -43,5 +46,10 @@ public class CameraHolder : MonoBehaviour {
         mainCam.transform.SetPositionAndRotation(position.position, position.rotation);
 
         countDown = 10;
+    }
+
+    bool Grounded()
+    {
+        return a.isGrounded && b.isGrounded && c.isGrounded && d.isGrounded;
     }
 }
