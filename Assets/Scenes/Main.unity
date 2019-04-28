@@ -249,3 +249,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 585c3041f312c4ad4bfb2f6b0fefeb66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  kempBucks: 0.5

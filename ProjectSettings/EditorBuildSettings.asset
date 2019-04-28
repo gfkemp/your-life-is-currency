@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Drive.unity
     guid: 9c812315d5fde45fcbe38fb798b4f5fc
+  - enabled: 1
+    path: Assets/Scenes/Survey.unity
+    guid: 8a88578bf5ba340618c5e8e74d3faeef
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 5ec2ebc3523434023a9db26e85069c04
   m_configObjects: {}

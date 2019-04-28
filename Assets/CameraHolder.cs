@@ -14,7 +14,6 @@ public class CameraHolder : MonoBehaviour {
 
     float countDown = 10;
     private bool normalTrack = true;
-    Transform oldPosition;
 
 	void Start () {
 		
@@ -42,7 +41,6 @@ public class CameraHolder : MonoBehaviour {
     internal void SetFollowCam(Transform position)
     {
         normalTrack = false;
-        oldPosition = mainCam.transform;
         mainCam.transform.SetPositionAndRotation(position.position, position.rotation);
 
         countDown = 10;

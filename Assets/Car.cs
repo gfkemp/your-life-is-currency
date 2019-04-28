@@ -18,6 +18,8 @@ public class Car : MonoBehaviour {
     public float steeringRatio = 10;
     public float brakeAmount = 10;
 
+    private bool stop = false;
+
     private void Start()
     {
         Rigidbody rb = this.GetComponent<Rigidbody>();
@@ -26,6 +28,11 @@ public class Car : MonoBehaviour {
 
     private void Update()
     {
+        if (stop)
+        {
+            return;
+        }
+
         if (Input.GetKey(KeyCode.R))
         {
             this.transform.position = new Vector3(100, 0, 150);
@@ -73,5 +80,10 @@ public class Car : MonoBehaviour {
 
         fl.steerAngle = steer;
         fr.steerAngle = steer;
+    }
+
+    public void Stop()
+    {
+        this.stop = true;
     }
 }

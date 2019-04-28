@@ -9,6 +9,8 @@ public class RampDetect : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        cameraHolder.SetFollowCam(position);
+        if (other is BoxCollider) { 
+            cameraHolder.SetFollowCam(position);
+        }
     }
 }
